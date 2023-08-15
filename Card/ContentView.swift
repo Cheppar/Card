@@ -27,8 +27,14 @@ struct ContentView: View {
                     Image("card3")
                     Spacer()
                 }
-                Spacer()
-                        Image("button")
+                    Spacer()
+            
+                Button{
+                    deal()
+                }label: {
+                  Image("button")
+                }
+                
                     Spacer()
                     HStack{
                         Spacer()
@@ -55,7 +61,12 @@ struct ContentView: View {
                 }
             }
         }
+    
+    func deal () {
+        print ("Joining ACA ++ CAnada. ")
     }
+}
+
 
 
 struct ContentView_Previews: PreviewProvider {
